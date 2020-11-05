@@ -38,7 +38,7 @@ function paintToDo(text){
     toDos.push(toDoObj);
     savetToDos();
 }
-function handleSubmit(){
+function handleSubmit(event){
     preventDefault();
     const currentValue=toDoInput.value;
     paintToDo(currentValue);
@@ -55,7 +55,7 @@ function loadToDos(){
 }
 function init(){
     loadToDos();
-    toDoForm.addEventListener("submit",handleSubmit
+    toDoForm.addEventListener("submit",handleSubmit);
 }
 
 init();
